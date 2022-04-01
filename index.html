@@ -4,9 +4,8 @@
 <body>
     <form action="http://116.206.154.166/readqrcode.php" method="post">
         <div id="qr-reader" style="width:500px"></div>
-        <input type="text" name="qrcode" id="qr-reader-results">
-        <br>
-        <input type="text" name="qrcode2" id="qr-reader-results2">
+       
+        <input type="text" name="qrcode" id="qr-reader-results2">
         <br>
         <br><br>
         <span id="span1"></span>
@@ -38,10 +37,9 @@ lastResult = decodedText;
 alert(`Scan result ${decodedText}`, decodedResult);
                                             
  //$('#qr-reader-results').val(decodedText);
- document.getElementById('qr-reader-results').value=decodedResult;
+
  document.getElementById('qr-reader-results2').value=decodedText;
-                                            document.getElementById('span1').text=decodedResult;
-                                            document.getElementById('span2').text=decodedText;
+                                            
 }
 }
 
